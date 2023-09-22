@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Harbeer Kehal's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+  </div>
+
+
+  <div class="hero-image" id="home">
+    <div class="hero-text">
+      <h1>I am Harbeer Kehal </h1>
+      <p>And I'm a Software Engineer</p>
+      <button><a href="#contact">Hire me</a></button>
+    </div>
+  </div>
+
+
+  <div class="about-section" id="about">
+    <h1>About me</h1>
+    <p>Currently in my second year as a software engineering at the University of Western Ontario. I'm open to any
+      opportunities as I look to further develop my knowledge of the field. Looking for summer 2024 internships.
+    </p>
+
+    <h2>Some technologies I have worked with:</h2>
+
+    <ol class=arrow-list>
+      <li>&rarr; Java</li>
+      <li>&rarr; HTML</li>
+      <li>&rarr; CSS</li>
+      <li>&rarr; React</li>
+      <li>&rarr; Python</li>
+    </ol>
+  </div>
+
+  </div>
+
+  <h2 style="text-align:center" id="projects">Projects</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="wheelchair.jpg " alt="wheelchair" style="width:100%">
+        <div class="container">
+          <h2>Wheelchair Phone Holder</h2>
+          <p class="title">Project Partcipant</p>
+          <p>Worked with a client to obtain the results she couldn't find in professional products </p>
+          <p>More information available.</p>
+          <p>
+          <p><a href="#contact" class="button">Contact</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="reactlogo.png" alt="react logo" style="width:100%">
+        <div class="container">
+          <h2>Personal Website</h2>
+          <p class="title">Creator</p>
+          <p>Learned and utilized HTML, CSS and JS frameworks to develop a website.</p>
+          <p>More information available.</p>
+          <p>
+          <p><a href="#contact" class="button">Contact</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="discord.jpg" alt="discord logo" style="width:100%">
+        <div class="container">
+          <h2>Discord Bot</h2>
+          <p class="title">Developer</p>
+          <p>Developed a discord bot to showcase certain statistics when prompted to.</p>
+          <p>More information available.</p>
+          <p>
+          <p><a href="#contact" class="button">Contact</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container2">
+    <div style="text-align:center">
+      <h2 id=contact>Contact Me</h2>
+      <p>Please fill out the form so I can get to know you better.:</p>
+    </div>
+    <div class="row2">
+      <div class="column">
+        <img src="cartoonman.jpg" style="width:100%">
+      </div>
+      <div class="column2">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="other">Other</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" id="sub" onclick=submitform()>
+        </form>
+      <div id = "formsubmission"></div>
+    </div>
+  </div>
+</div>
+
+
+
+  <br>
+
+
+  <div class="footer">
+    <a href="#top" id="jump"> Jump to Top</a>
+  </div>
+
+  <script id = "feedback">function submitform() {
+    let x = document.getElementById("formsubmission")
+    document.getElementById("formsubmission");
+    x.innerHTML = "Form has been submitted, thank you.";
+      console.log(x);
+    };
+  </script>
+
+</body>
+
+</html>
